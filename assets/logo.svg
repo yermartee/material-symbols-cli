@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="title desc">
+  <title id="title">Material Symbols CLI — Logo</title>
+  <desc id="desc">Circular logo: distinct vertical-stem 'M' in Material Blue gradient. Designed to be visually distinct from other 'M' marks.</desc>
+  <defs>
+    <linearGradient id="msym-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2196F3" />
+      <stop offset="100%" stop-color="#1976D2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circular background using Material Blue gradient -->
+  <circle cx="60" cy="60" r="54" fill="url(#msym-grad)" />
+
+  <!-- Vertical-stem 'M' path. Start at baseline, ascend to top-left, dip to center baseline, ascend to top-right, descend to baseline. -->
+  <path d="M30 96 L30 30 L60 80 L90 30 L90 96" stroke="#FFFFFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+</svg>

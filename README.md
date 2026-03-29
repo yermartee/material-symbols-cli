@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/hianali/material-symbols-cli/main/assets/logo.svg" width="120" alt="msym logo" />
+  <img src="assets/logo.svg" width="120" alt="material-symbols-cli logo" />
 </p>
 
 <h1 align="center">material-symbols-cli</h1>
