@@ -1,0 +1,110 @@
+{
+  "name": "@hianali/material-symbols-cli",
+  "version": "0.1.0",
+  "description": "CLI tool to fetch Google Material Symbols and generate tree-shakable icon components for React, React Native, MUI, Vue, Angular, Svelte, Solid, Preact, Qwik, Lit, Web Components, Flutter, and raw SVG",
+  "author": "Hianali <info@hianali.io> (https://hianali.io)",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hianali/material-symbols-cli.git"
+  },
+  "homepage": "https://github.com/hianali/material-symbols-cli#readme",
+  "bugs": {
+    "url": "https://github.com/hianali/material-symbols-cli/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/hianali"
+  },
+  "keywords": [
+    "material-symbols",
+    "material-design",
+    "material-3",
+    "icons",
+    "icon-generator",
+    "code-generation",
+    "cli",
+    "svg",
+    "tree-shakable",
+    "google-fonts",
+    "mui",
+    "react",
+    "react-native",
+    "vue",
+    "angular",
+    "svelte",
+    "solid",
+    "solidjs",
+    "preact",
+    "qwik",
+    "lit",
+    "web-components",
+    "flutter"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "msym": "dist/cli.js",
+    "material-symbols": "dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": {
+        "import": "./dist/index.d.ts",
+        "require": "./dist/index.d.cts"
+      },
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./config": {
+      "types": {
+        "import": "./dist/config.d.ts",
+        "require": "./dist/config.d.cts"
+      },
+      "import": "./dist/config.js",
+      "require": "./dist/config.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome lint --files-ignore-unknown=true .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "ora": "^8.2.0",
+    "picocolors": "^1.1.1",
+    "svgo": "^3.3.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.4.4",
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

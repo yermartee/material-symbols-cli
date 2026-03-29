@@ -1,0 +1,24 @@
+# Development files
+src/
+tsconfig.json
+tsup.config.ts
+biome.json
+pnpm-lock.yaml
+
+# CI / tooling
+.github/
+.agents/
+.claude/
+.vscode/
+.editorconfig
+
+# Tests
+__tests__/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Misc
+node_modules/
+.DS_Store
+*.tgz

@@ -1,0 +1,14 @@
+{
+  "root": true,
+  "$schema": "https://biomejs.dev/schemas/2.4.4/schema.json",
+  "files": {
+    "includes": ["**", "!node_modules", "!dist", "!coverage", "!.turbo"]
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noConsole": "off"
+      }
+    }
+  }
+}

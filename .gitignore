@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+.agents/
+.claude/
+
+# Build output
+dist/
+coverage/
+.turbo/
+*.tsbuildinfo
+*.tgz
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Editor files
+.vscode/
+.idea/
+
+# Local AI customization files
+.github/copilot-instructions.md
+.github/instructions/
+.github/agents/
+.github/prompts/
+
+# OS files
+.DS_Store
+Thumbs.db
