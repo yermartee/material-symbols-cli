@@ -36,7 +36,7 @@ Existing Material Symbols packages ship **every icon upfront** — fonts, CSS bu
 
 | Feature | msym | `material-symbols` | `@material-symbols/svg-*` | `react-material-symbols` |
 |---------|------|---------------------|--------------------------|--------------------------|
-| **Install size** | ~120 KB (CLI only) | 12.7 MB | 12.8 MB (23K files) | 1.2 MB |
+| **Install size** | ~190 KB (CLI only) | 12.7 MB | 12.8 MB (23K files) | 1.2 MB |
 | **Icons shipped** | Only what you use | All 3000+ | All 3000+ | All (font) |
 | **Formats** | 13 (MUI, React, React Native, Vue, Angular, Svelte, Solid, Preact, Qwik, Lit, WC, Flutter, SVG) | CSS only | Raw SVG (needs @svgr) | React only |
 | **Tree-shakable** | Yes (individual files) | No (font/CSS) | Manual | No (font) |
